@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toronto Star graphic template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"> 
+<style>
+
+@font-face {
+  font-family: TorstarDeckCondensed;
+  src: url(https://misc.thestar.com/fonts/TorstarDeckCondensed-Semibold.otf);
+}
+
+
+/* 
+Raptors colours
+#CE1141 for red
+#000000 for black 
+#A1A1A4 for silver
+#B4975A for gold
+*/
+
+
+body {
+	margin: 0;
+  	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  	background-color: #f8f8f8;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.graphic-wrapper {
+  margin: 0 auto;
+  max-width: 600px; }
+
+
+
+  .graphic {
+    width: 100%;
+    position: relative;
+  }
+
+  .flexit {
+    display: flex;
+  }
+
+  .flexitColumn {
+    flex-direction: column;
+  }
+
+  .line-container {
+    width: 1px;
+    /* background-color: #999; */
+    background-color: #CE1141;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 0;
+  }
+
+  
+
+  .date-container {
+    background-color: #f8f8f8;
+    padding: 16px;
+    margin-bottom: 80px;
+    position: relative;
+    
+  }
+
+  .date-container p {
+    font-weight: 600;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #CE1141;
+    
+  }
+  
+  .timeline-container {
+    background-color: #f8f8f8;
+    position: relative;
+    padding: 16px;
+    max-width: 500px;
+    margin: 0 auto 80px;
+    
+  }
+  
+  .timeline-container p {
+    font-weight: 400;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.4em;
+    letter-spacing: 0.25px;
+  }
+  
+
+  .timeline-container p a {
+     color: #333;
+  }
+
+   .timeline-container p a:hover {
+    color: #CE1141;
+   }
+
+  .timeline-container p span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0 1px;
+    background-color: #CE1141;
+    color: #F8F8F8;
+    padding: 0 4px;
+    white-space: nowrap;
+    border-radius: 2px;
+  }
+
+  .timeline-container p.secondary-date {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 8px;
+    text-align: center;
+    /* color: #222; */
+    color: #CE1141;
+  }
+  
+  .scoreContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .timeline-container p.wins, .timeline-container p.losses {
+    display: block;
+    margin: 0 12px;
+  }
+  
+  .timeline-container p.wins span, .timeline-container p.losses span {
+    font-weight: 600;
+    color: #444;
+    background-color: #F8F8F8;
+  }
+
+.graphic-map {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto 12px;
+}
+
+.graphic-img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 12px;
+  border-radius: 0;
+}
+
+.seasonReport-container {
+  display: flex;
+}
+
+.bracket {
+ width: 120px;
+ /* height: 100%; */
+}
+
+.leftBracket {
+  border-top: 1px solid #CE1141;
+  /* border-right: 0; */
+  border-bottom: 1px solid #CE1141;
+  border-left: 1px solid #CE1141;
+}
+
+.rightBracket {
+  border-top: 1px solid #CE1141;
+  border-right: 1px solid #CE1141;
+  border-bottom: 1px solid #CE1141;
+  /* border-left: 0; */
+}
+
+.report-container {
+  padding: 30px;
+}
+
+.reportNumbers {
+  justify-content: space-around;
+  text-align: center;
+  margin: 12px auto;
+}
+
+p.reportNumber{
+  font-size: 42px;
+  color: #CE1141;
+}
+
+.reportOutcomes-container {
+  margin: 12px auto;
+}
+
+p.reportOutcomes-sub {
+  font-weight: 600;
+  color: #444;
+  background-color: #F8F8F8;
+}
+
+.pwbreak {
+  padding-bottom: 8px;
+}
+
+/*.graphic2 .line-container {
+    background-color: #d10d0d;
+  }*/
+
+/*.graphic2 .timeline-container p.secondary-date, .graphic2 .date-container p {
+    color: #b90c0c;
+  }*/
+
+/*.graphic2 .timeline-container p {
+  color: #e90f0f;
+}*/
+
+/*.graphic2 .timeline-container p span {
+  background-color: #fddfdf;
+}
+*/
+  
+
+p.interlude {
+   font-weight: 400;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    margin: 0 0 72px;
+    color: #444;
+    font-size: 20px;
+    line-height: 1.4em;
+    letter-spacing: 0.25px;
+    text-align: center;
+
+}
+
+ @media (max-width: 450px) {
+
+  .date-container {
+     padding: 12px 4px;
+     margin-bottom: 48px;
+  }
+
+  .date-container p {
+     font-size: 20px;
+
+  }
+
+   .timeline-container {
+    padding: 12px 4px;
+    max-width: 500px;
+    margin: 0 auto 48px;
+   }
+
+   .timeline-container p { 
+    font-size: 15px;
+   }
+
+   p.interlude {
+     margin: 0 0 56px;
+      font-size: 18px;
+   }
+
+}
+
+</style>
+</head>
+<body>
+  <div class="graphic-wrapper graphic-1">
+
+
+    <div class="graphic">
+    <div class="line-container"></div>
+      
+    
+    <div class="date-container">
+      <p>2013</p>
+    </div>
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">July 2013</p>
+          <!-- <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">22</span></p>
+            <p class="losses">L: <span class="lossNumber">15</span></p>
+          </div> -->
+        </div>
+        <img class="graphic-img" src="./img/Nick-Nurse.JPG" alt="Toronto Raptors. NBA. Headshot. Logo.
+        Nick Nurse">
+        <p>Nurse departed the Vipers for an assistant job on the coaching staff of the Toronto Raptors under Dwane Casey. He was in charge of the offense during his time under Casey, and in the 2017-18 season he was credited for changes to the Raptors offensive game plan which included increases in passing and 3-point attempts.</p>
+      </div>
+      
+      
+      <div class="date-container">
+        <p>2018</p>
+      </div>
+      
+      
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">June 14, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">0</span></p>
+            <p class="losses">L: <span class="lossNumber">0</span></p>
+          </div>
+        </div>
+        <!-- <img class="graphic-map" src="france.svg" alt="A map of Paris in France"> -->
+        <img class="graphic-img" src="./img/T1J104482149.JPG" alt="Nick Nurse is introduced as the new NBA head coach of the Toronto Raptors at the Air Canada Centre in Toronto on Thursday, June 14, 2018">
+        <p><span>Paris</span> Lorem ipsum dolor sit amet. <a href="https://www.theguardian.com/world/2020/feb/07/paris-mayor-unveils-15-minute-city-plan-in-re-election-campaign" target="_blank">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a> Neque natus iste voluptatum nesciunt, provident enim! Temporibus quo, accusantium asperiores exercitationem, quas quae suscipit rem at dolore est in ullam explicabo.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <img class="graphic-img" src="./img/T1J104482149.JPG" alt="Nick Nurse is introduced as the new NBA head coach of the Toronto Raptors at the Air Canada Centre in Toronto on Thursday, June 14, 2018">
+        <p class="pwbreak">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quae itaque corporis et, voluptates laborum beatae voluptatum similique consequatur vero. <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, molestias. Quaerat ipsam animi ut quae, rerum excepturi. Fugiat, voluptatum. Porro, provident voluptas cum nesciunt omnis cumque, est esse quia dignissimos ex repudiandae officiis impedit veniam laborum itaque architecto enim vero?</p>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="seasonReport-container">
+          <div class="bracket leftBracket"></div>
+          <div class="report-container">
+            <p class="secondary-date">2018-2019<br> season report</p>
+            <div class="reportNumbers flexit">
+              <div class="winsReport-container flexit flexitColumn">
+                <p class="reportNumberTitle">Wins</p>
+                <p class="reportNumber">89</p>
+              </div>
+              <div class="lossReport-container flexit flexitColumn">
+                <p class="reportNumberTitle">Losses</p>
+                <p class="reportNumber">20</p>
+              </div>
+              <div class="ratioReport-container flexit flexitColumn">
+                <p class="reportNumberTitle">Win Ratio</p>
+                <p class="reportNumber">.703</p>
+              </div>
+            </div>
+            <div class="reportOutcomes-container">
+              <p class="reportOutcomes-sub">Outcomes</p>
+              <p class="outcome regSeason"><span>Regular Season:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="outcome playoffSeason"><span>Playoff:</span> NBA champions Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, explicabo. </p>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod, maiores aut et blanditiis totam deserunt veritatis tempore dolor dolorem quidem voluptas impedit ipsam.</p>
+          </div>
+          <div class="bracket rightBracket"></div>
+        </div>
+      </div>
+
+
+
+      <div class="date-container">
+        <p>2021</p>
+      </div>
+
+      
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <img class="graphic-img" src="./img/T1J104482149.JPG" alt="Nick Nurse is introduced as the new NBA head coach of the Toronto Raptors at the Air Canada Centre in Toronto on Thursday, June 14, 2018">
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+
+      
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+
+      
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <img class="graphic-img" src="./img/T1J104482149.JPG" alt="Nick Nurse is introduced as the new NBA head coach of the Toronto Raptors at the Air Canada Centre in Toronto on Thursday, June 14, 2018">
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+
+      <div class="date-container">
+        <p>2022</p>
+      </div>
+
+       
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+
+        
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+  
+    </div>
+
+    <p class="interlude">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, distinctio labore maiores dolore obcaecati ipsa iusto, delectus aut rem hic fugiat? Molestias ad quis eaque sint vero nihil expedita. Numquam.</p>
+
+    <div class="graphic graphic2">
+    <div class="line-container"></div>
+
+     
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+     
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+      
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+      <div class="date-container">
+        <p>2023</p>
+      </div>
+
+      
+
+      <div class="timeline-container">
+        <div class="dateScore-container">
+          <p class="secondary-date">October 22, 2018</p>
+          <div class="scoreContainer">
+            <p class="wins">W: <span class="winNumber">12</span></p>
+            <p class="losses">L: <span class="lossNumber">6</span></p>
+          </div>
+        </div>
+        <p class="pwbreak">With people spending more time at home and in their local communities during the pandemic, the idea of making services more accessible begins to gain traction. Other cities around the world announce 15-minute-city initiatives, including <span>Barcelona</span>, <span>Portland</span>, <span>Dublin</span> and <span>Buenos Aires</span>.</p>
+        <p>Approaches vary by city but include things like upgraded streets, priority areas for children and more green space and open air markets.</p>
+      </div>
+
+      <div class="timeline-container">
+        <p class="secondary-date">Feb. 10</p>
+        <p class="pwbreak">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ipsum aspernatur corrupti quasi dicta asperiores necessitatibus maiores harum eum officiis veritatis, dolores porro odit ducimus, eaque temporibus illo doloremque sequi. <span>Edmonton</span>.</p>
+      </div>
+
+    </div>
+
+
+
+   
+
+  
+  </div>
+
+<script>
+
+
+    function resize(){
+        var message = {'resize': 
+                  {
+                    'iframe':'graphic-iframe-1',
+                    'height': document.getElementsByClassName('graphic-1')[0].offsetHeight + 20
+                  }
+                };
+       
+        parent.postMessage(message, "*");
+
+        console.log('resized')
+    };
+
+    window.addEventListener('load', function() {
+        resize();
+    });
+
+    window.addEventListener("resize", function(){
+        resize();
+    });
+
+    setTimeout(function() {
+                        resize();
+                    }, 500);
+
+    setTimeout(function() {
+                        resize();
+                    }, 1000);
+
+    setTimeout(function() {
+                        resize();
+                    }, 2000);
+
+    setTimeout(function() {
+                        resize();
+                    }, 5000);
+
+    setTimeout(function() {
+                        resize();
+                    }, 10000);
+
+    setTimeout(function() {
+                        resize();
+                    }, 20000);
+
+  
+	document.addEventListener("touchstart", function(){}, true);
+
+</script>
+
+</body>
+</html>
